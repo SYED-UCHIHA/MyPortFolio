@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syed Khasim S | Shadow Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #bb00ff;
+        --accent: #5e17eb;
+        --bg: #0a0a0a;
+        --card-bg: #18122b;
+        --text: #ffffff;
+        --fade: #999999;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Orbitron", sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      header {
+        background: linear-gradient(to right, #0a0a0a, #130420);
+        padding: 30px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        box-shadow: 0 0 10px #3d0066;
+        animation: fadeInDown 1s ease;
+      }
+
+      header h1 {
+        font-size: 28px;
+        color: var(--primary);
+        text-shadow: 0 0 10px var(--primary);
+      }
+
+      nav a {
+        color: var(--text);
+        text-decoration: none;
+        margin-left: 20px;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: var(--primary);
+        text-shadow: 0 0 10px var(--primary);
+      }
+
+      section {
+        padding: 60px 40px;
+        background-color: var(--bg);
+        border-bottom: 1px solid #222;
+        animation: fadeIn 1.2s ease;
+      }
+
+      .section-title {
+        font-size: 28px;
+        color: var(--primary);
+        border-bottom: 2px solid var(--accent);
+        display: inline-block;
+        margin-bottom: 20px;
+        text-shadow: 0 0 10px var(--primary);
+      }
+
+      ul {
+        list-style: none;
+        margin-top: 15px;
+      }
+
+      li {
+        margin: 10px 0;
+      }
+
+      .btn {
+        background: var(--primary);
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 15px;
+        box-shadow: 0 0 15px var(--primary);
+        transition: background 0.3s ease, box-shadow 0.3s;
+      }
+
+      .btn:hover {
+        background: var(--accent);
+        box-shadow: 0 0 20px var(--accent), 0 0 40px var(--accent);
+      }
+
+      .contact-info p,
+      .contact-info a {
+        margin: 6px 0;
+        color: var(--fade);
+        transition: color 0.3s ease;
+      }
+
+      .contact-info a:hover {
+        color: var(--primary);
+        text-shadow: 0 0 10px var(--primary);
+      }
+
+      footer {
+        background-color: #130420;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+        color: #777;
+        box-shadow: 0 -2px 10px #3d0066;
+        animation: fadeInUp 1s ease;
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        nav {
+          margin-top: 10px;
+        }
+        nav a {
+          display: block;
+          margin: 10px 0 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Syed Khasim S</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I’m an Engineering graduate in Electrical and Electronics Engineering
+        with a strong interest in Full Stack Development. I specialize in Java,
+        frontend technologies, backend systems, and database handling.
+        Currently, I’m interning as a Java Full Stack Developer at Jspiders,
+        Bangalore.
+      </p>
+      <a class="btn" href="SYEDFullStack.Resume.pdf" download
+        >Download Resume</a
+      >
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <ul>
+        <li>
+          <strong>Languages:</strong> Java, SQL, HTML5, CSS3, JavaScript,
+          ReactJS
+        </li>
+        <li><strong>Databases:</strong> MySQL, PostgreSQL, OracleSQL</li>
+        <li><strong>Frameworks:</strong> Bootstrap, Spring boot, Hibernate</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <ul>
+        <li>
+          <strong>Database CRUD (JDBC):</strong> Java + JDBC +
+          MySQL/Oracle/PostgreSQL for full DB operations.
+        </li>
+        <li>
+          <strong>Banking App:</strong> Console app using Core Java for
+          deposits, withdrawal, and balance check.
+        </li>
+        <li>
+          <strong>Restaurant Website:</strong> HTML5 & CSS3 responsive design
+          with smooth UI.
+        </li>
+        <li>
+          <strong>Portfolio Website:</strong> Personal branding site hosted for
+          career opportunities.
+        </li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <p>
+        <strong
+          >Java Full Stack Intern – Jspiders, Bangalore (Feb 2025 -
+          Present)</strong
+        >
+      </p>
+      <ul>
+        <li>Developed scalable backend systems with Java.</li>
+        <li>Followed best practices and clean code principles.</li>
+        <li>Built enterprise-ready Java apps from scratch.</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <ul>
+        <li>
+          <strong>B.E. (EEE)</strong> – Priyadharshini Engineering College
+          (CGPA: 7.8)
+        </li>
+        <li>
+          <strong>HSC (Computer Science)</strong> – Anaikar Oriental Arabic HSS
+          (77.5%)
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-info">
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:ksyed8294@gmail.com">ksyed8294@gmail.com</a>
+        </p>
+        <p><strong>Phone:</strong> <a href="tel:7397012955">7397012955</a></p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a
+            href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BQtTLL296QPKiq132BYB9yg%3D%3D"
+            target="_blank"
+            >View Profile</a
+          >
+        </p>
+        <p>
+          <strong>Portfolio:</strong>
+          <a href="https://shihasyasinn.github.io/Portfolio.io/" target="_blank"
+            >Visit Site</a
+          >
+        </p>
+        <p>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/SYED-UCHIHA" target="_blank"
+            >Visit Site</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Syed Khasim S. Awakened Developer. All rights reserved.
+    </footer>
+  </body>
+</html>
